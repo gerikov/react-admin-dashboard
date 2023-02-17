@@ -17,6 +17,8 @@ import MapOutlinedIcon from "@mui/icons-material/MapOutlined";
 import { fontWeight } from "@mui/system";
 import "react-pro-sidebar/dist/css/styles.css";
 
+import profilePic from "../../assets/user.png";
+
 const Item = ({ title, to, icon, selected, setSelected }) => {
   const theme = useTheme();
   const colors = tokens(theme.palette.mode);
@@ -92,7 +94,7 @@ const Sidebar = () => {
             <Box mb="25px">
               <Box display="flex" justifyContent="center" alignItems="center">
                 <img
-                  src={`../../assets/cets.png`}
+                  src={profilePic}
                   alt="profile-user"
                   width="100px"
                   height="100px"
